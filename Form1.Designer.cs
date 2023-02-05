@@ -47,15 +47,15 @@
             this.chbalicate = new System.Windows.Forms.CheckBox();
             this.chbserrucho = new System.Windows.Forms.CheckBox();
             this.chbmartillos = new System.Windows.Forms.CheckBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btncerrar = new System.Windows.Forms.Button();
             this.grbdescuento = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btntotalpagar = new System.Windows.Forms.Button();
+            this.txttotalapagar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rdb50 = new System.Windows.Forms.RadioButton();
+            this.rdb30 = new System.Windows.Forms.RadioButton();
+            this.rdb15 = new System.Windows.Forms.RadioButton();
+            this.rdb0 = new System.Windows.Forms.RadioButton();
             this.grbdetalleProducto.SuspendLayout();
             this.grbdescuento.SuspendLayout();
             this.SuspendLayout();
@@ -64,9 +64,10 @@
             // 
             this.lbltitulo.AutoSize = true;
             this.lbltitulo.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbltitulo.Location = new System.Drawing.Point(355, 22);
+            this.lbltitulo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbltitulo.Location = new System.Drawing.Point(311, 13);
             this.lbltitulo.Name = "lbltitulo";
-            this.lbltitulo.Size = new System.Drawing.Size(360, 34);
+            this.lbltitulo.Size = new System.Drawing.Size(291, 25);
             this.lbltitulo.TabIndex = 0;
             this.lbltitulo.Text = "Ferreteria Los \"Proceres\"";
             // 
@@ -90,120 +91,109 @@
             this.grbdetalleProducto.Controls.Add(this.chbserrucho);
             this.grbdetalleProducto.Controls.Add(this.chbmartillos);
             this.grbdetalleProducto.Font = new System.Drawing.Font("Lucida Sans Unicode", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.grbdetalleProducto.Location = new System.Drawing.Point(34, 115);
-            this.grbdetalleProducto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grbdetalleProducto.Location = new System.Drawing.Point(30, 83);
             this.grbdetalleProducto.Name = "grbdetalleProducto";
-            this.grbdetalleProducto.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grbdetalleProducto.Size = new System.Drawing.Size(646, 452);
+            this.grbdetalleProducto.Size = new System.Drawing.Size(565, 339);
             this.grbdetalleProducto.TabIndex = 1;
             this.grbdetalleProducto.TabStop = false;
             this.grbdetalleProducto.Text = "Detalle Producto";
             // 
             // btncalcular
             // 
-            this.btncalcular.Location = new System.Drawing.Point(322, 380);
-            this.btncalcular.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btncalcular.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btncalcular.Location = new System.Drawing.Point(282, 285);
             this.btncalcular.Name = "btncalcular";
-            this.btncalcular.Size = new System.Drawing.Size(114, 60);
+            this.btncalcular.Size = new System.Drawing.Size(100, 45);
             this.btncalcular.TabIndex = 16;
             this.btncalcular.Text = "Calcular";
-            this.btncalcular.UseVisualStyleBackColor = true;
+            this.btncalcular.UseVisualStyleBackColor = false;
             this.btncalcular.Click += new System.EventHandler(this.btncalcular_Click);
             // 
             // txtsubtotal
             // 
-            this.txtsubtotal.Location = new System.Drawing.Point(322, 327);
-            this.txtsubtotal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtsubtotal.Location = new System.Drawing.Point(282, 245);
             this.txtsubtotal.Name = "txtsubtotal";
             this.txtsubtotal.ReadOnly = true;
-            this.txtsubtotal.Size = new System.Drawing.Size(114, 33);
+            this.txtsubtotal.Size = new System.Drawing.Size(100, 28);
             this.txtsubtotal.TabIndex = 15;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Lucida Sans Unicode", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(197, 341);
+            this.label3.Location = new System.Drawing.Point(172, 256);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 21);
+            this.label3.Size = new System.Drawing.Size(77, 17);
             this.label3.TabIndex = 14;
             this.label3.Text = "SubTotal";
             // 
             // txtsubllave
             // 
-            this.txtsubllave.Location = new System.Drawing.Point(470, 270);
-            this.txtsubllave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtsubllave.Location = new System.Drawing.Point(411, 202);
             this.txtsubllave.Name = "txtsubllave";
             this.txtsubllave.ReadOnly = true;
-            this.txtsubllave.Size = new System.Drawing.Size(114, 33);
+            this.txtsubllave.Size = new System.Drawing.Size(100, 28);
             this.txtsubllave.TabIndex = 13;
             // 
             // txtsubalicate
             // 
-            this.txtsubalicate.Location = new System.Drawing.Point(470, 207);
-            this.txtsubalicate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtsubalicate.Location = new System.Drawing.Point(411, 155);
             this.txtsubalicate.Name = "txtsubalicate";
             this.txtsubalicate.ReadOnly = true;
-            this.txtsubalicate.Size = new System.Drawing.Size(114, 33);
+            this.txtsubalicate.Size = new System.Drawing.Size(100, 28);
             this.txtsubalicate.TabIndex = 12;
             // 
             // txtsubserrucho
             // 
-            this.txtsubserrucho.Location = new System.Drawing.Point(470, 143);
-            this.txtsubserrucho.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtsubserrucho.Location = new System.Drawing.Point(411, 107);
             this.txtsubserrucho.Name = "txtsubserrucho";
             this.txtsubserrucho.ReadOnly = true;
-            this.txtsubserrucho.Size = new System.Drawing.Size(114, 33);
+            this.txtsubserrucho.Size = new System.Drawing.Size(100, 28);
             this.txtsubserrucho.TabIndex = 11;
             // 
             // txtsubmartillos
             // 
-            this.txtsubmartillos.Location = new System.Drawing.Point(470, 82);
-            this.txtsubmartillos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtsubmartillos.Location = new System.Drawing.Point(411, 62);
             this.txtsubmartillos.Name = "txtsubmartillos";
             this.txtsubmartillos.ReadOnly = true;
-            this.txtsubmartillos.Size = new System.Drawing.Size(114, 33);
+            this.txtsubmartillos.Size = new System.Drawing.Size(100, 28);
             this.txtsubmartillos.TabIndex = 10;
             // 
             // txtcantllave
             // 
-            this.txtcantllave.Location = new System.Drawing.Point(322, 270);
-            this.txtcantllave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtcantllave.Location = new System.Drawing.Point(282, 202);
             this.txtcantllave.Name = "txtcantllave";
-            this.txtcantllave.Size = new System.Drawing.Size(114, 33);
+            this.txtcantllave.Size = new System.Drawing.Size(100, 28);
             this.txtcantllave.TabIndex = 9;
             // 
             // txtcantalicate
             // 
-            this.txtcantalicate.Location = new System.Drawing.Point(322, 207);
-            this.txtcantalicate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtcantalicate.Location = new System.Drawing.Point(282, 155);
             this.txtcantalicate.Name = "txtcantalicate";
-            this.txtcantalicate.Size = new System.Drawing.Size(114, 33);
+            this.txtcantalicate.Size = new System.Drawing.Size(100, 28);
             this.txtcantalicate.TabIndex = 8;
             // 
             // txtcantserrucho
             // 
-            this.txtcantserrucho.Location = new System.Drawing.Point(322, 143);
-            this.txtcantserrucho.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtcantserrucho.Location = new System.Drawing.Point(282, 107);
             this.txtcantserrucho.Name = "txtcantserrucho";
-            this.txtcantserrucho.Size = new System.Drawing.Size(114, 33);
+            this.txtcantserrucho.Size = new System.Drawing.Size(100, 28);
             this.txtcantserrucho.TabIndex = 7;
             // 
             // txtcantmartillos
             // 
-            this.txtcantmartillos.Location = new System.Drawing.Point(322, 82);
-            this.txtcantmartillos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtcantmartillos.Location = new System.Drawing.Point(282, 62);
             this.txtcantmartillos.Name = "txtcantmartillos";
-            this.txtcantmartillos.Size = new System.Drawing.Size(114, 33);
+            this.txtcantmartillos.Size = new System.Drawing.Size(100, 28);
             this.txtcantmartillos.TabIndex = 6;
             // 
             // lblsubtotal
             // 
             this.lblsubtotal.AutoSize = true;
             this.lblsubtotal.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblsubtotal.Location = new System.Drawing.Point(483, 35);
+            this.lblsubtotal.Location = new System.Drawing.Point(423, 26);
             this.lblsubtotal.Name = "lblsubtotal";
-            this.lblsubtotal.Size = new System.Drawing.Size(91, 21);
+            this.lblsubtotal.Size = new System.Drawing.Size(70, 16);
             this.lblsubtotal.TabIndex = 5;
             this.lblsubtotal.Text = "SubTotal";
             // 
@@ -211,9 +201,9 @@
             // 
             this.lblcantidad.AutoSize = true;
             this.lblcantidad.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblcantidad.Location = new System.Drawing.Point(342, 35);
+            this.lblcantidad.Location = new System.Drawing.Point(299, 26);
             this.lblcantidad.Name = "lblcantidad";
-            this.lblcantidad.Size = new System.Drawing.Size(93, 21);
+            this.lblcantidad.Size = new System.Drawing.Size(71, 16);
             this.lblcantidad.TabIndex = 4;
             this.lblcantidad.Text = "Cantidad";
             // 
@@ -221,10 +211,9 @@
             // 
             this.chbllave.AutoSize = true;
             this.chbllave.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.chbllave.Location = new System.Drawing.Point(27, 272);
-            this.chbllave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chbllave.Location = new System.Drawing.Point(24, 204);
             this.chbllave.Name = "chbllave";
-            this.chbllave.Size = new System.Drawing.Size(260, 25);
+            this.chbllave.Size = new System.Drawing.Size(204, 20);
             this.chbllave.TabIndex = 3;
             this.chbllave.Text = "Llave Ajustable L.150.00";
             this.chbllave.UseVisualStyleBackColor = true;
@@ -233,10 +222,9 @@
             // 
             this.chbalicate.AutoSize = true;
             this.chbalicate.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.chbalicate.Location = new System.Drawing.Point(27, 209);
-            this.chbalicate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chbalicate.Location = new System.Drawing.Point(24, 157);
             this.chbalicate.Name = "chbalicate";
-            this.chbalicate.Size = new System.Drawing.Size(275, 25);
+            this.chbalicate.Size = new System.Drawing.Size(216, 20);
             this.chbalicate.TabIndex = 2;
             this.chbalicate.Text = "Alicate Universal L.125.00";
             this.chbalicate.UseVisualStyleBackColor = true;
@@ -245,10 +233,9 @@
             // 
             this.chbserrucho.AutoSize = true;
             this.chbserrucho.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.chbserrucho.Location = new System.Drawing.Point(27, 145);
-            this.chbserrucho.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chbserrucho.Location = new System.Drawing.Point(24, 109);
             this.chbserrucho.Name = "chbserrucho";
-            this.chbserrucho.Size = new System.Drawing.Size(207, 25);
+            this.chbserrucho.Size = new System.Drawing.Size(162, 20);
             this.chbserrucho.TabIndex = 1;
             this.chbserrucho.Text = "Serrucho L. 120.00";
             this.chbserrucho.UseVisualStyleBackColor = true;
@@ -257,128 +244,135 @@
             // 
             this.chbmartillos.AutoSize = true;
             this.chbmartillos.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.chbmartillos.Location = new System.Drawing.Point(27, 84);
-            this.chbmartillos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chbmartillos.Location = new System.Drawing.Point(24, 63);
             this.chbmartillos.Name = "chbmartillos";
-            this.chbmartillos.Size = new System.Drawing.Size(195, 25);
+            this.chbmartillos.Size = new System.Drawing.Size(154, 20);
             this.chbmartillos.TabIndex = 0;
             this.chbmartillos.Text = "Martillos L. 75.00";
             this.chbmartillos.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btncerrar
             // 
-            this.button2.Location = new System.Drawing.Point(950, 580);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 31);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btncerrar.BackColor = System.Drawing.Color.Red;
+            this.btncerrar.Font = new System.Drawing.Font("Lucida Sans Unicode", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btncerrar.Location = new System.Drawing.Point(805, 427);
+            this.btncerrar.Name = "btncerrar";
+            this.btncerrar.Size = new System.Drawing.Size(101, 45);
+            this.btncerrar.TabIndex = 17;
+            this.btncerrar.Text = "Cerrar";
+            this.btncerrar.UseVisualStyleBackColor = false;
+            this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click);
             // 
             // grbdescuento
             // 
-            this.grbdescuento.Controls.Add(this.button1);
-            this.grbdescuento.Controls.Add(this.textBox1);
+            this.grbdescuento.Controls.Add(this.btntotalpagar);
+            this.grbdescuento.Controls.Add(this.txttotalapagar);
             this.grbdescuento.Controls.Add(this.label1);
-            this.grbdescuento.Controls.Add(this.radioButton4);
-            this.grbdescuento.Controls.Add(this.radioButton3);
-            this.grbdescuento.Controls.Add(this.radioButton2);
-            this.grbdescuento.Controls.Add(this.radioButton1);
+            this.grbdescuento.Controls.Add(this.rdb50);
+            this.grbdescuento.Controls.Add(this.rdb30);
+            this.grbdescuento.Controls.Add(this.rdb15);
+            this.grbdescuento.Controls.Add(this.rdb0);
             this.grbdescuento.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.grbdescuento.Location = new System.Drawing.Point(716, 115);
+            this.grbdescuento.Location = new System.Drawing.Point(626, 83);
+            this.grbdescuento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbdescuento.Name = "grbdescuento";
-            this.grbdescuento.Size = new System.Drawing.Size(320, 452);
+            this.grbdescuento.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbdescuento.Size = new System.Drawing.Size(280, 339);
             this.grbdescuento.TabIndex = 18;
             this.grbdescuento.TabStop = false;
             this.grbdescuento.Text = "Descuento";
             // 
-            // button1
+            // btntotalpagar
             // 
-            this.button1.Location = new System.Drawing.Point(78, 380);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(147, 60);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Calcular Total a Pagar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btntotalpagar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btntotalpagar.Location = new System.Drawing.Point(68, 285);
+            this.btntotalpagar.Name = "btntotalpagar";
+            this.btntotalpagar.Size = new System.Drawing.Size(129, 45);
+            this.btntotalpagar.TabIndex = 19;
+            this.btntotalpagar.Text = "Calcular Total a Pagar";
+            this.btntotalpagar.UseVisualStyleBackColor = false;
+            this.btntotalpagar.Click += new System.EventHandler(this.btntotalpagar_Click);
             // 
-            // textBox1
+            // txttotalapagar
             // 
-            this.textBox1.Location = new System.Drawing.Point(162, 335);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(130, 34);
-            this.textBox1.TabIndex = 17;
+            this.txttotalapagar.Location = new System.Drawing.Point(142, 251);
+            this.txttotalapagar.Name = "txttotalapagar";
+            this.txttotalapagar.ReadOnly = true;
+            this.txttotalapagar.Size = new System.Drawing.Size(114, 28);
+            this.txttotalapagar.TabIndex = 17;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(23, 341);
+            this.label1.Location = new System.Drawing.Point(20, 256);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 21);
+            this.label1.Size = new System.Drawing.Size(111, 17);
             this.label1.TabIndex = 17;
             this.label1.Text = "Total a Pagar";
             // 
-            // radioButton4
+            // rdb50
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.radioButton4.Location = new System.Drawing.Point(29, 270);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(67, 25);
-            this.radioButton4.TabIndex = 3;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "50%";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rdb50.AutoSize = true;
+            this.rdb50.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rdb50.Location = new System.Drawing.Point(25, 202);
+            this.rdb50.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdb50.Name = "rdb50";
+            this.rdb50.Size = new System.Drawing.Size(56, 21);
+            this.rdb50.TabIndex = 3;
+            this.rdb50.TabStop = true;
+            this.rdb50.Text = "50%";
+            this.rdb50.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rdb30
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.radioButton3.Location = new System.Drawing.Point(29, 207);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(67, 25);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "30%";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rdb30.AutoSize = true;
+            this.rdb30.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rdb30.Location = new System.Drawing.Point(25, 155);
+            this.rdb30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdb30.Name = "rdb30";
+            this.rdb30.Size = new System.Drawing.Size(56, 21);
+            this.rdb30.TabIndex = 2;
+            this.rdb30.TabStop = true;
+            this.rdb30.Text = "30%";
+            this.rdb30.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rdb15
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.radioButton2.Location = new System.Drawing.Point(29, 143);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(67, 25);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "15%";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdb15.AutoSize = true;
+            this.rdb15.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rdb15.Location = new System.Drawing.Point(25, 107);
+            this.rdb15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdb15.Name = "rdb15";
+            this.rdb15.Size = new System.Drawing.Size(56, 21);
+            this.rdb15.TabIndex = 1;
+            this.rdb15.TabStop = true;
+            this.rdb15.Text = "15%";
+            this.rdb15.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rdb0
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.radioButton1.Location = new System.Drawing.Point(29, 82);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(55, 25);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "0%";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdb0.AutoSize = true;
+            this.rdb0.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rdb0.Location = new System.Drawing.Point(25, 62);
+            this.rdb0.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdb0.Name = "rdb0";
+            this.rdb0.Size = new System.Drawing.Size(46, 21);
+            this.rdb0.TabIndex = 0;
+            this.rdb0.TabStop = true;
+            this.rdb0.Text = "0%";
+            this.rdb0.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1070, 633);
+            this.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.ClientSize = new System.Drawing.Size(936, 485);
             this.Controls.Add(this.grbdescuento);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btncerrar);
             this.Controls.Add(this.grbdetalleProducto);
             this.Controls.Add(this.lbltitulo);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "Factura Ferreeria";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -413,14 +407,14 @@
         private TextBox txtcantalicate;
         private TextBox txtcantserrucho;
         private TextBox txtcantmartillos;
-        private Button button2;
+        private Button btncerrar;
         private GroupBox grbdescuento;
-        private Button button1;
-        private TextBox textBox1;
+        private Button btntotalpagar;
+        private TextBox txttotalapagar;
         private Label label1;
-        private RadioButton radioButton4;
-        private RadioButton radioButton3;
-        private RadioButton radioButton2;
-        private RadioButton radioButton1;
+        private RadioButton rdb50;
+        private RadioButton rdb30;
+        private RadioButton rdb15;
+        private RadioButton rdb0;
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aguil\\OneDrive\\proyectos UNiversidad\\Prog Visual\\Ferreteria los Proceres\\Ferreteria los Proceres.csproj": {}
+    "C:\\Users\\aguil\\OneDrive\\gitHub\\factura\\Ferreteria los Proceres.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aguil\\OneDrive\\proyectos UNiversidad\\Prog Visual\\Ferreteria los Proceres\\Ferreteria los Proceres.csproj": {
+    "C:\\Users\\aguil\\OneDrive\\gitHub\\factura\\Ferreteria los Proceres.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aguil\\OneDrive\\proyectos UNiversidad\\Prog Visual\\Ferreteria los Proceres\\Ferreteria los Proceres.csproj",
+        "projectUniqueName": "C:\\Users\\aguil\\OneDrive\\gitHub\\factura\\Ferreteria los Proceres.csproj",
         "projectName": "Ferreteria los Proceres",
-        "projectPath": "C:\\Users\\aguil\\OneDrive\\proyectos UNiversidad\\Prog Visual\\Ferreteria los Proceres\\Ferreteria los Proceres.csproj",
+        "projectPath": "C:\\Users\\aguil\\OneDrive\\gitHub\\factura\\Ferreteria los Proceres.csproj",
         "packagesPath": "C:\\Users\\aguil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aguil\\OneDrive\\proyectos UNiversidad\\Prog Visual\\Ferreteria los Proceres\\obj\\",
+        "outputPath": "C:\\Users\\aguil\\OneDrive\\gitHub\\factura\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\aguil\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
